@@ -1,0 +1,155 @@
+:root {
+  /* ### Primary */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  background-color: var(--Transparent-white);
+}
+
+.Container {
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 90%;
+}
+
+.Wraper {
+  display: flex;
+  height: 55vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.box1 {
+  width: 30%;
+  height: 55vh;
+  min-width: 30rem;
+  background-color: var(--Bright-orange);
+  border-bottom-left-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+
+.box2 {
+  width: 30%;
+  height: 55vh;
+
+  min-width: 30rem;
+  background-color: var(--Dark-cyan);
+}
+
+.box3 {
+  width: 30%;
+  height: 55vh;
+
+  min-width: 30rem;
+  background-color: var(--Very-dark-cyan);
+  border-bottom-right-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.box1 img,
+.box2 img,
+.box3 img {
+  padding: 2rem 2rem;
+  margin-top: 3rem;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--Very-light-gray);
+}
+p {
+  margin-top: 1rem;
+  width: 70%;
+  font-size: 1.3rem;
+  color: var(--Transparent-white);
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  padding: 2rem 2rem;
+}
+
+.btn1 button,
+.btn2 button,
+.btn3 button {
+  padding: 1rem 1rem;
+  width: 40%;
+  border-radius: 2rem;
+  background-color: var(--Very-light-gray);
+  font-weight: 700;
+}
+
+.btn1 button {
+  color: var(--Bright-orange);
+}
+
+.btn2 button {
+  color: var(--Dark-cyan);
+}
+
+.btn3 button {
+  color: var(--Very-dark-cyan);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 830px) {
+  .Container {
+    height: auto;
+  }
+  .Wraper {
+    flex-direction: column;
+    height: auto;
+    margin: 4rem 0;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    height: auto;
+    border-radius: 0;
+  }
+
+  .box1 {
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+  }
+  .box3 {
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 912px) and (max-width: 1024px) {
+  .box1,
+  .box2,
+  .box3 {
+    height: auto;
+  }
+}
