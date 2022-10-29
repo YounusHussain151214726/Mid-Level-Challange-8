@@ -32,6 +32,8 @@ body {
   margin: 0 auto;
   max-width: 1110px;
   width: 90%;
+display: flex;
+align-items: center;
 }
 
 .Wraper {
@@ -44,7 +46,6 @@ body {
 
 .box1 {
   width: 30%;
-  height: 55vh;
   min-width: 30rem;
   background-color: var(--Bright-orange);
   border-bottom-left-radius: 0.8rem;
@@ -53,7 +54,6 @@ body {
 
 .box2 {
   width: 30%;
-  height: 55vh;
 
   min-width: 30rem;
   background-color: var(--Dark-cyan);
@@ -61,7 +61,7 @@ body {
 
 .box3 {
   width: 30%;
-  height: 55vh;
+
 
   min-width: 30rem;
   background-color: var(--Very-dark-cyan);
@@ -90,12 +90,13 @@ p {
   width: 70%;
   font-size: 1.3rem;
   color: var(--Transparent-white);
+line-height: 2rem;
 }
 
 .btn1,
 .btn2,
 .btn3 {
-  padding: 2rem 2rem;
+  padding: 6rem 2rem;
 }
 
 .btn1 button,
